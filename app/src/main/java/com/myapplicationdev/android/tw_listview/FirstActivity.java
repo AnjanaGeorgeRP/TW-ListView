@@ -37,9 +37,8 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String selectedYear = al.get(position);
-                Intent i = new Intent(FirstActivity.this, SecondActivity.class)
+                Intent i = new Intent(FirstActivity.this, SecondActivity.class);
                 i.putExtra("year", selectedYear);
-
                 startActivity(i);
 
             }
