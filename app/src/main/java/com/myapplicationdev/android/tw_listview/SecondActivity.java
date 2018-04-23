@@ -37,11 +37,11 @@ public class SecondActivity extends AppCompatActivity {
             module.add(new Module("C105", true));
             module.add(new Module("B102", false));
             module.add(new Module("A113", false));
-        }if(year.equalsIgnoreCase("Year 2")){
+        }else if(year.equalsIgnoreCase("Year 2")){
             module.add(new Module("C208", false));
             module.add(new Module("C200", true));
             module.add(new Module("C346", false));
-        }else{
+        }else if(year.equalsIgnoreCase("Year 3")){
             module.add(new Module("C347", true));
             module.add(new Module("C302", true));
             module.add(new Module("C349", true));
