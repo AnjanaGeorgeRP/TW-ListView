@@ -33,11 +33,11 @@ public class SecondActivity extends AppCompatActivity {
         Intent i = getIntent();
         String year = i.getStringExtra("year");
         tvYear.setText(year);
-        if(year == "Year 1"){
+        if(year.equalsIgnoreCase("Year 1")){
             module.add(new Module("C105", true));
             module.add(new Module("B102", false));
             module.add(new Module("A113", false));
-        }if(year == "Year 2"){
+        }if(year.equalsIgnoreCase("Year 2")){
             module.add(new Module("C208", false));
             module.add(new Module("C200", true));
             module.add(new Module("C346", false));
