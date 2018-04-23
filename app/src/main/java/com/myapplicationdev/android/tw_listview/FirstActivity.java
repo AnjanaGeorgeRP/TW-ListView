@@ -37,19 +37,11 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String selectedYear = al.get(position);
-                Intent i = new Intent(FirstActivity.this, SecondActivity.class);
-
-                if (selectedYear == "0"){
-                    i.putExtra("year", "Year 1");
-                }else if (selectedYear == "1"){
-                    i.putExtra("year", "Year 2");
-                }else{
-                    i.putExtra("year", "Year 3");
-                }
+                Intent i = new Intent(FirstActivity.this, SecondActivity.class)
+                i.putExtra("year", selectedYear);
 
                 startActivity(i);
 
-                Toast.makeText(FirstActivity.this, selectedYear, Toast.LENGTH_LONG);
             }
         });
 
