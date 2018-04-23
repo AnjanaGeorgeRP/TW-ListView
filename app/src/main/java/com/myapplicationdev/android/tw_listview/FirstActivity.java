@@ -30,6 +30,7 @@ public class FirstActivity extends AppCompatActivity {
         al.add("Year 2");
         al.add("Year 3");
 
+        aa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, al);
         lv.setAdapter(aa);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
